@@ -1,5 +1,6 @@
 body{
     background-color:#ffffff;
+    border:#74302F;
 }
 .container{
     padding-left:10%;
@@ -82,12 +83,37 @@ section {
     color:black;
 }
 .video{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-iframe{
-    border: none;
-    max-width: 100%;
-    height: auto;
+.footer{
+    text-align: center; 
+    padding: 30px;
+    padding-left: 50px; 
+    background-color: #74302F; 
+    color: #ffffff;
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.intro button{
+    background-color: rgb(182, 44, 44);
+    color: #ffffff;
+    border-radius: 10%;
+    padding:10px 30px;
+    border-color:rgb(182, 44, 44);
+    box-shadow: none;
 }

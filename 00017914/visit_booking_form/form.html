@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="script" src="script.js">
+        <link rel="stylesheet" src="styles.css">
+    </head>
+    <body>
+       <form>
+        <h1>Let's plan your appointment!</h1>
+        <textarea>Describe your problem</textarea>
+        
+        <fieldset>
+            <legend>How old are you?</legend>
+          
+            <div>
+              <input type="radio" id="child" name="age" value="child" checked />
+              <label for="child">younger then 18</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="adult" name="age" value="adult" />
+              <label for="adult">from 18 to 56</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="old" name="age" value="old" />
+              <label for="old"> from 56 and olf</label>
+            </div>
+        </fieldset>
+        <select name="Gender">
+            <option value="none">None</option>
+            <opttion value="Male">Male</opttion>
+            <opttion value="Female">Female</opttion>
+        </select >
+        <button>Submit</button>
+     </form>
+     <pre id="log"></pre>
+        
+    </body>
+</html>
