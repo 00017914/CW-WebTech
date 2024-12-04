@@ -1,120 +1,134 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Medical Website</title>
-      <link rel='stylesheet' href="styles.css">
-      <link rel="script" src="script.js">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body class="container">
-        <header class="header">
-           <img src="../pics/Logofolio.jpeg" alt="logo" onclick="openMenu()">
-                <div class="top">
-                    <nav>
-                        <a href="#intro">Home</a>
-                        <a href="#about-us">About us</a>
-                        <a href="#services">Services</a>
-                        <a href="#team">Our team</a>
-                        <a href="#contacts">Contact us</a>
-                    </nav>
-               </div>
-        </header>
-        <main class="main">
-            <div class="intro" id="intro">
-                
-                <h2>Redheart Hospital</h2>
-                <p class="intro-text">Welcome to Redheart Hospital, a premier private healthcare institution dedicated exclusively to cardiovascular excellence. Our state-of-the-art facility is equipped with advanced technology and staffed by a team of renowned cardiologists, cardiac surgeons, and healthcare professionals committed to delivering world-class care.<br>
+<html lang="en">
+<head>
+    <title>Medical Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="container">
+    <!-- Navigation line on top -->
+    <header class="header">
+        <img src="../pics/Logofolio.jpeg" alt="logo" onclick="openMenu()">
+        <div class="top">
+            <nav>
+                <a href="#intro">Home</a>
+                <a href="#about-us">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#team">Our Team</a>
+                <a href="#contacts">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main class="main">
+        <div class="intro" id="intro">
+            <h2>Redheart Hospital</h2>
+            <p class="intro-text">
+                Welcome to Redheart Hospital, a premier private healthcare institution dedicated exclusively to cardiovascular excellence. Our state-of-the-art facility is equipped with advanced technology and staffed by a team of renowned cardiologists, cardiac surgeons, and healthcare professionals committed to delivering world-class care.
+            </p>
+            <a href="../visit_booking_form/form.html"><button>PLAN VISIT</button></a>
+        </div>
 
-                    At Redheart Hospital, we specialize in a wide range of cardiovascular procedures, including minimally invasive heart surgeries, coronary artery bypass grafting (CABG), valve replacements, congenital heart defect repairs, and advanced heart rhythm treatments. <br> Our integrated approach ensures that each patient receives personalized care tailored to their unique condition, with a focus on achieving optimal outcomes.</p>
-                 <a href="../visit_booking_form/form.html"><button>PLAN VISIT</button></a>
+        <section class="about-us" id="about-us">
+            <h2>About Us</h2>
+            <p>At Redheart Hospital, we are dedicated to safeguarding the most vital organ in your body—your heart.</p>
+            <hr>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="video">
+                <iframe 
+                    height="400" 
+                    width="600" 
+                    title="Video about services"
+                    src="https://www.youtube.com/embed/fv53QZRk4hs"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
-            <section class="about-us" id="about-us">
-                <h2>About us</h2>
-                <p>At Redheart Hospital, we are dedicated to safeguarding the most vital organ in your body—your heart. As a leading private healthcare institution specializing in advanced cardiovascular care, we provide exceptional treatment, innovative procedures, and compassionate support for patients and families alike.</p>
-                <p>Founded on a commitment to excellence, Redheart Hospital combines cutting-edge medical technology with a patient-centered approach. Our team of world-class cardiologists, cardiac surgeons, and healthcare professionals brings extensive expertise in diagnosing and treating complex heart conditions. From minimally invasive procedures to life-saving surgeries, we deliver personalized care to meet each patient’s unique needs.</p>
-                <hr>
-            </section>
-            <section class="services" id="services">
-                <h2>Our Services </h2>
-                <div class="video">
-                    <iframe>
-                        hight='400'
-                        width='200'
-                        title="Vidro about services"
-                        src="https://www.youtube.com/embed/fv53QZRk4hs"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <p></p>
-                <hr>
-            </section>
-            <section class="team" id="team">
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
+            <hr>
+        </section>
+
+        <section class="team" id="team">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <a href="../doctors/doctors.html">
+                    <img src="../pics/dr.png" alt="Doctor Image">
+                </a>
+                    <figcaption>Dr. Super</figcaption>
                     <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
-                    <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
-                    <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
-                    <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
-                    <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
-                    <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
-                <figure>
-                    <img src="../pics/dr.png">
-                    <figcaption>Dr.Super</figcaption>
-                    <figcaption>Columbia College, 1989</figcaption>
-                    <figcaption>23 years of expirience</figcaption>
-                </figure>
+                    <figcaption>23 years of experience</figcaption>
                 
-            </section>
-            
-        </main>
-       
-        <footer id="contacts">
-            <div class="footer">
-                <p>Redheart Hospital</p>
-                <p>123 Mirabad Avenue, Tashkent City, HC 45678</p>
-                <p>Phone: +998 99 123-4567</p>
-                <p>Email: contact@redhearthospital.com</p>
-                <p>&copy; 2024 Redheart Hospital. All Rights Reserved.</p>
-            </div>
-        </footer>
+            </figure>
+            <figure>
+                <a href="../doctors/doctors.html">
+                    <img src="../pics/dr.png" alt="Doctor Image">
+                </a>
+                    <figcaption>Dr. Super</figcaption>
+                    <figcaption>Columbia College, 1989</figcaption>
+                    <figcaption>23 years of experience</figcaption>
+                
+            </figure>
+            <figure>
+                <a href="../doctors/doctors.html">
+                    <img src="../pics/dr.png" alt="Doctor Image">
+                </a>
+                    <figcaption>Dr. Super</figcaption>
+                    <figcaption>Columbia College, 1989</figcaption>
+                    <figcaption>23 years of experience</figcaption>
+                
+            </figure>
+            <figure>
+                <a href="../doctors/doctors.html">
+                    <img src="../pics/dr.png" alt="Doctor Image">
+                </a>
+                    <figcaption>Dr. Super</figcaption>
+                    <figcaption>Columbia College, 1989</figcaption>
+                    <figcaption>23 years of experience</figcaption>
+                
+            </figure>
+            <figure>
+                <a href="../doctors/doctors.html">
+                    <img src="../pics/dr.png" alt="Doctor Image">
+                </a>
+                    <figcaption>Dr. Super</figcaption>
+                    <figcaption>Columbia College, 1989</figcaption>
+                    <figcaption>23 years of experience</figcaption>
+                
+            </figure>
+            <figure>
+                <a href="../doctors/doctors.html">
+                    <img src="../pics/dr.png" alt="Doctor Image">
+                </a>
+                    <figcaption>Dr. Super</figcaption>
+                    <figcaption>Columbia College, 1989</figcaption>
+                    <figcaption>23 years of experience</figcaption>
+                
+            </figure>
+            <!-- Repeat doctor cards as needed -->
+        </section>
+    </main>
+   <!-- Contact information -->
+    <footer id="contacts">
+        <div class="footer">
+            <p>Redheart Hospital</p>
+            <p>123 Mirabad Avenue, Tashkent City, HC 45678</p>
+            <p>Phone: +998 99 123-4567</p>
+            <p>Email: contact@redhearthospital.com</p>
+            <p>&copy; 2024 Redheart Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        /*Side Menu*/
-        <section class="menu" id="menu" >
-            <a href="../home/index.html"><h3>Home</h3></a>
-            <a href="../visit_booking_form/form.html"><h3>Plan a visit</h3></a>
-            <a href="../reviews/review_page.html"><h3>Live review</h3></a>
-            <button id="close" onclick="closeMenu()">Go back</button>
-        <script src="script.js"></script>
-    </body>
+    <!-- Side Menu -->
+    <section class="menu" id="menu">
+        <a href="../home/index.html"><h3>Home</h3></a>
+        <a href="../visit_booking_form/form.html"><h3>Plan a Visit</h3></a>
+        <a href="../reviews/review_page.html"><h3>Live Review</h3></a>
+        <button id="close" onclick="closeMenu()">Go Back</button>
+    </section>
 
+    <script src="script.js"></script>
+</body>
 </html>

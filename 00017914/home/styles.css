@@ -1,39 +1,53 @@
-body{
-    background-color:#ffffff;
-    border:#74302F;
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
 }
-.container{
-    padding-left:10%;
-    padding-right: 10%;
-    max-width:1000px;
+
+.container {
+    padding: 0 10%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-   
 }
+<!-- Navigation line design -->
 .header {
-    display: flex ;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:#74302F ;
-    
-   
+    align-items: center;
+    background-color: #74302F;
+    padding: 10px 20px;
 }
-.header img{
-    height:50px;
+
+.header img {
+    height: 50px;
+    cursor: pointer;
 }
-.top{
+
+.top {
     display: flex;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;   
-    
+    gap: 20px;
 }
-.top a{
-    color:aliceblue;
+
+.top a {
+    color: aliceblue;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
 }
-a:visited {color : #ffffff; text-decoration : none;}  
+
+.top a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+<!--Introductory info design-->
 .intro {
     color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -46,7 +60,7 @@ a:visited {color : #ffffff; text-decoration : none;}
     height: 400px;
 }
 
-.intro h1 {
+.intro h2 {
     font-size: 36px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -58,74 +72,131 @@ a:visited {color : #ffffff; text-decoration : none;}
     border-radius: 8px;
     display: inline-block;
     margin-top: 20px;
+    text-align: justify;
 }
+
+.intro button {
+    background-color: rgb(182, 44, 44);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.intro button:hover {
+    background-color: rgb(150, 30, 30);
+}
+
+<!-- Main body-->
 
 .main {
     display: flex;
     flex-direction: column;
-    
+    gap: 20px;
 }
 
 section {
-    margin-bottom: 10px;
-    
+    margin-bottom: 20px;
 }
 
 .about-us {
     color: #000000;
     line-height: 1.6;
+    text-align: justify;
 }
-.about-us h2{
+
+.about-us h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
-.services h2{
+
+.services h2 {
     text-align: center;
-    color:black;
+    color: black;
+    margin-bottom: 20px;
 }
-.video{
+
+.video {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer{
-    text-align: center; 
-    padding: 30px;
-    padding-left: 50px; 
-    background-color: #74302F; 
+
+.footer {
+    text-align: center;
+    padding: 30px 50px;
+    background-color: #74302F;
     color: #ffffff;
 }
-.team{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.team h2{
+    align-self: center;
 }
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 .team img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
-.intro button{
-    background-color: rgb(182, 44, 44);
-    color: #ffffff;
-    border-radius: 10%;
-    padding:10px 30px;
-    border-color:rgb(182, 44, 44);
-    box-shadow: none;
+
+.team img:hover {
+    transform: scale(1.1);
 }
-.menu{
+
+<!--Hidden menu -->
+
+.menu {
     height: 100%;
-    width: 0; 
-    position: fixed; 
+    width: 0;
+    position: fixed;
     top: 0;
     left: 0;
-    color: #ffffff;
     background-color: rgb(182, 44, 44);
-    overflow-x: hidden; 
-    transition: 0.5s; 
+    overflow-x: hidden;
+    transition: 0.5s;
     padding-top: 60px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #dddddd;
+}
+
+.menu button {
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #ffffff;
+    color: rgb(182, 44, 44);
 }

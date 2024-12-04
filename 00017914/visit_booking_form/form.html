@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plan Your Appointment</title>
+</head>
+<body>
+    <header class="header">
+        <img src="../pics/Logofolio.jpeg" alt="logo" onclick="openMenu()" />
+    </header>
+
+    <!-- Appointment registration form -->
+    <form id="appointment-form">
+        <h1>Let's Plan Your Appointment!</h1>
         
-        <link rel="stylesheet" src="styles.css">
-    </head>
-    <body>
-       <form>
-        <h1>Let's plan your appointment!</h1>
-        <textarea>Describe your problem</textarea>
-        
+        <textarea id="problem-description" placeholder="Describe your problem" required></textarea>
         <fieldset>
             <legend>How old are you?</legend>
-          
             <div>
-              <input type="radio" id="child" name="age" value="child" checked />
-              <label for="child">younger then 18</label>
+                <input type="radio" id="child" name="age" value="child" checked />
+                <label for="child">Younger than 18</label>
             </div>
-          
             <div>
-              <input type="radio" id="adult" name="age" value="adult" />
-              <label for="adult">from 18 to 56</label>
+                <input type="radio" id="adult" name="age" value="adult" />
+                <label for="adult">From 18 to 56</label>
             </div>
-          
             <div>
-              <input type="radio" id="old" name="age" value="old" />
-              <label for="old"> from 56 and olf</label>
+                <input type="radio" id="old" name="age" value="old" />
+                <label for="old">From 56 and older</label>
             </div>
         </fieldset>
-        <select name="Gender">
-            <option value="none">None</option>
-            <opttion value="Male">Male</opttion>
-            <opttion value="Female">Female</opttion>
-        </select >
-        <button>Submit</button>
-     </form>
-     <pre id="log"></pre>
-     <link src="./styles.css">  
-    </body>
+
+        <select name="gender" id="gender">
+            <option value="none" selected disabled>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+  <!-- Hidden side menu-->
+    <section class="menu" id="menu">
+        <a href="../home/index.html"><h3>Home</h3></a>
+        <a href="../visit_booking_form/form.html"><h3>Plan a Visit</h3></a>
+        <a href="../reviews/review_page.html"><h3>Live Review</h3></a>
+        <button id="close" onclick="closeMenu()">Go Back</button>
+    </section>
+
+    <!-- Output Log -->
+    <pre id="log"></pre>
+
+    <!-- Link to script -->
+    <script src="./script.js"></script>
+</body>
 </html>
