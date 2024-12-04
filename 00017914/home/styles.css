@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-<!-- Navigation line design -->
+
 .header {
     display: flex;
     flex-direction: row;
@@ -47,7 +47,7 @@ a:visited {
     color: #ffffff;
     text-decoration: none;
 }
-<!--Introductory info design-->
+
 .intro {
     color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -90,7 +90,6 @@ a:visited {
     background-color: rgb(150, 30, 30);
 }
 
-<!-- Main body-->
 
 .main {
     display: flex;
@@ -156,7 +155,6 @@ section {
     transform: scale(1.1);
 }
 
-<!--Hidden menu -->
 
 .menu {
     height: 100%;
