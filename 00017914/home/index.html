@@ -3,12 +3,13 @@
     <head>
       <title>Medical Website</title>
       <link rel='stylesheet' href="styles.css">
+      <link rel="script" src="script.js">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="container">
         <header class="header">
-           <img src="../pics/Logofolio.jpeg" alt="logo">
+           <img src="../pics/Logofolio.jpeg" alt="logo" onclick="openMenu()">
                 <div class="top">
                     <nav>
                         <a href="#intro">Home</a>
@@ -100,12 +101,20 @@
         <footer id="contacts">
             <div class="footer">
                 <p>Redheart Hospital</p>
-                <p>123 Heart Avenue, Cardio City, HC 45678</p>
-                <p>Phone: +1 (555) 123-4567</p>
+                <p>123 Mirabad Avenue, Tashkent City, HC 45678</p>
+                <p>Phone: +998 99 123-4567</p>
                 <p>Email: contact@redhearthospital.com</p>
                 <p>&copy; 2024 Redheart Hospital. All Rights Reserved.</p>
             </div>
         </footer>
+
+        /*Side Menu*/
+        <section class="menu" id="menu" >
+            <a href="../home/index.html"><h3>Home</h3></a>
+            <a href="../visit_booking_form/form.html"><h3>Plan a visit</h3></a>
+            <a href="../reviews/review_page.html"><h3>Live review</h3></a>
+            <button id="close" onclick="closeMenu()">Go back</button>
+        <script src="script.js"></script>
     </body>
 
 </html>

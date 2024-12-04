@@ -29,7 +29,7 @@ body{
     
 }
 .top a{
-    text-color:aliceblue;
+    color:aliceblue;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -116,4 +116,16 @@ section {
     padding:10px 30px;
     border-color:rgb(182, 44, 44);
     box-shadow: none;
+}
+.menu{
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgb(182, 44, 44);
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    padding-top: 60px;
 }
